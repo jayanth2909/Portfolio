@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Typography, Card, CardContent, Grid, Box } from '@mui/material';
 import { Code, Coffee, Users, Lightbulb, Rocket, Heart, Brain, Target } from 'lucide-react';
@@ -7,33 +9,33 @@ const About: React.FC = () => {
   const highlights = [
     {
       icon: Code,
-      title: "Clean Architecture",
-      description: "Building scalable, maintainable solutions with modern design patterns",
+      title: "Full-Stack Expertise",
+      description: "Skilled in building scalable, high-performance web applications using Java 17, Spring Boot 3.1, Hibernate, React.js, and REST APIs.",
       color: "from-blue-500 to-cyan-500"
     },
     {
       icon: Brain,
       title: "Problem Solver",
-      description: "Transforming complex challenges into elegant, user-friendly solutions",
+      description: "Known for improving application performance by 35–40%, reducing defects by 30–45%, and delivering efficient solutions under tight deadlines.",
       color: "from-purple-500 to-pink-500"
     },
     {
       icon: Users,
       title: "Team Collaboration",
-      description: "Fostering innovation through effective communication and teamwork",
+      description: "Proven ability to coordinate remote teams, mentor interns, and ensure smooth knowledge transfer through documentation and communication.",
       color: "from-green-500 to-emerald-500"
     },
     {
       icon: Rocket,
       title: "Innovation Driven",
-      description: "Constantly exploring cutting-edge technologies and methodologies",
+      description: "Passionate about emerging technologies, AI-powered solutions, and building software that impacts thousands of users.",
       color: "from-orange-500 to-red-500"
     }
   ];
 
   const stats = [
-    { number: "1+", label: "Years Experience", icon: Target },
-    { number: "10+", label: "Projects Completed", icon: Code },
+    { number: "1.5+", label: "Years Experience", icon: Target },
+    { number: "10+", label: "Projects Delivered", icon: Code },
     { number: "∞", label: "Cups of Coffee", icon: Coffee }
   ];
 
@@ -55,18 +57,21 @@ const About: React.FC = () => {
           <Typography variant="h3" className="font-bold mb-4">
             About <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Me</span>
           </Typography>
-          <Typography variant="body1"
-                      sx={{
-                      color: '#94a3b8', 
-                      maxWidth: '70rem', 
-                      marginX: 'auto',
-                      fontSize: '1.125rem', 
-                      lineHeight: 1.75,     
-                      textAlign: 'center',
-                      mb: 4,}}>
-            Passionate software developer with 5+ years of experience crafting digital solutions 
-            that make a meaningful impact. I thrive on turning complex problems into elegant, 
-            user-centered experiences.
+          <Typography 
+            variant="body1"
+            sx={{
+              color: '#94a3b8', 
+              maxWidth: '70rem', 
+              marginX: 'auto',
+              fontSize: '1.125rem', 
+              lineHeight: 1.75,     
+              textAlign: 'center',
+              mb: 4,
+            }}
+          >
+            I’m a dedicated Software Engineer with 1.5+ years of experience delivering full SDLC solutions across healthcare, sports, and simulation domains. 
+            Skilled in Java, Spring Boot, Hibernate, React.js, REST APIs, and cloud integrations, I’m passionate about solving complex problems, 
+            improving system performance, and delivering high-quality, user-centric solutions.
           </Typography>
         </motion.div>
 
@@ -169,15 +174,11 @@ const About: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <Typography variant="body1" className="text-slate-300 leading-relaxed mb-6">
-                    My journey began in college when I built my first web application and discovered 
-                    the magic of bringing ideas to life through code. Since then, I've had the privilege 
-                    of working with innovative startups and established companies, contributing to projects 
-                    that have positively impacted thousands of users.
+                    My journey began during my B.Tech in Computer Science & Data Science, where I built my first AI-powered application. 
+                    Since then, I have gained hands-on experience across multiple domains—healthcare, sports management, and CPU simulation—delivering scalable solutions using Java, Spring Boot, React.js, C#, and cloud-native technologies.
                   </Typography>
                   <Typography variant="body1" className="text-slate-300 leading-relaxed">
-                    I believe in continuous learning and staying ahead of the technology curve. When I'm 
-                    not coding, you'll find me contributing to open-source projects, writing technical 
-                    articles, or mentoring the next generation of developers.
+                    I thrive on solving real-world problems, continuously learning new tools and frameworks, and collaborating with teams to deliver robust, high-quality products that make an impact.
                   </Typography>
                 </div>
                 
@@ -190,10 +191,10 @@ const About: React.FC = () => {
                   </Typography>
                   <div className="space-y-3">
                     {[
-                      "Creating solutions that solve real-world problems",
-                      "Writing clean, maintainable, and scalable code",
-                      "Collaborating with talented teams and individuals",
-                      "Staying curious and embracing new challenges"
+                      "Delivering high-quality, scalable applications with measurable impact",
+                      "Optimizing performance and reducing defects through clean code practices",
+                      "Mentoring team members and sharing knowledge",
+                      "Exploring AI-driven and cloud-native solutions to stay ahead of the curve"
                     ].map((item, index) => (
                       <motion.div
                         key={index}

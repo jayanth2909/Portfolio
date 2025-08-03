@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
             className="mb-8"
           >
             <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2 }}>
-              <span className="text-blue-400">Dev</span>Portfolio
+              <span className="text-blue-400">Jayanth Utukuri </span>Portfolio
             </Typography>
             <Typography
               variant="body1"

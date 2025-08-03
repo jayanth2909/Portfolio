@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import { AppBar, Toolbar, Typography, Button, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import { Menu, X } from 'lucide-react';
@@ -15,15 +17,26 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // ✅ Proper mapping of nav items to section IDs
+  const navItems = [
+    { label: 'About', target: 'about' },
+    { label: 'Work Experience', target: 'experience' },
+    { label: 'Skills', target: 'skills' },
+    { label: 'Projects', target: 'projects' },
+    { label: 'Education', target: 'education' },
+    { label: 'Contact', target: 'contact' },
+  ];
+
+  // ✅ Smooth scroll with header offset
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const yOffset = -70; // adjust based on AppBar height
+      const yPosition = element.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: yPosition, behavior: 'smooth' });
     }
     setMobileOpen(false);
   };
-
-  const navItems = ['About', 'Skills', 'Projects', 'Contact'];
 
   return (
     <motion.div
@@ -42,7 +55,8 @@ const Header: React.FC = () => {
           <Typography 
             variant="h6" 
             component="div" 
-            className="flex-grow font-bold text-xl"
+            className="flex-grow font-bold text-xl cursor-pointer"
+            onClick={() => scrollToSection('about')}
           >
             <span className="text-blue-400">Jayanth</span> Utukuri
           </Typography>
@@ -51,12 +65,12 @@ const Header: React.FC = () => {
           <div className="hidden md:flex space-x-6">
             {navItems.map((item) => (
               <Button
-                key={item}
+                key={item.label}
                 color="inherit"
-                onClick={() => scrollToSection(item.toLowerCase())}
+                onClick={() => scrollToSection(item.target)}
                 className="hover:text-blue-400 transition-colors duration-300"
               >
-                {item}
+                {item.label}
               </Button>
             ))}
           </div>
@@ -91,11 +105,11 @@ const Header: React.FC = () => {
           <List>
             {navItems.map((item) => (
               <ListItem 
-                key={item}
-                onClick={() => scrollToSection(item.toLowerCase())}
+                key={item.label}
+                onClick={() => scrollToSection(item.target)}
                 className="cursor-pointer hover:bg-slate-700 rounded-lg transition-colors duration-300"
               >
-                <ListItemText primary={item} />
+                <ListItemText primary={item.label} />
               </ListItem>
             ))}
           </List>

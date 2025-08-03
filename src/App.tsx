@@ -8,6 +8,8 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WorkExperience from './components/WorkExperience';
+import Education from './components/Education';
 
 const theme = createTheme({
   palette: {
@@ -39,8 +41,10 @@ function App() {
         <Header />
         <Hero />
         <About />
+        <WorkExperience />
         <Skills />
         <Projects />
+        <Education />
         <Contact />
         <Footer />
       </div>
