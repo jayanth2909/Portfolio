@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Button, Typography } from '@mui/material';
 import { Download, Github, Linkedin, Mail, Code, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import profilePic from '../assets/dp.jpg';
+import profilePic from '../assets/dp.webp';
 
 const Hero: React.FC = () => {
   const scrollToContact = () => {
@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
     }
   };
 
-  // ✅ Rotating roles (only second part changes)
+  // Rotating roles (only second part changes)
   const roleVariants = [
     'Software Developer',
     'Software Engineer',
@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          {/* ✅ Profile Picture with rotation animation */}
+          {/* Profile Picture with rotation animation */}
           <motion.div
             initial={{ rotate: -180, scale: 0 }}
             animate={{ rotate: 0, scale: 1 }}
@@ -97,6 +97,10 @@ const Hero: React.FC = () => {
                   <img
                     src={profilePic}
                     alt="Jayanth Utukuri - Software Developer"
+                    width={224}
+                    height={224}
+                    loading="eager"
+                    fetchPriority="high"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent"></div>
@@ -115,7 +119,7 @@ const Hero: React.FC = () => {
             Hi, I'm <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Jayanth Utukuri</span>
           </Typography>
 
-          {/* ✅ Smooth typewriter transition */}
+          {/* Smooth typewriter transition */}
           <div className="flex items-center justify-center space-x-2 mb-6">
             <Code className="text-blue-400" size={24} />
             <AnimatePresence mode="wait">

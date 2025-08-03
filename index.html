@@ -6,10 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Jayanth Utukuri - Full Stack Software Developer Portfolio. Showcasing modern web applications built with React, Node.js, and cutting-edge technologies." />
     <meta name="keywords" content="software developer, full stack developer, react developer, portfolio, web development" />
-    <meta name="author" content="John Doe" />
+    <meta name="author" content="Jayanth Utukuri" />
     <title>Jayanth Utukuri - Software Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- ✅ Preload Hero Image for Faster LCP -->
+    <link rel="preload" as="image" href="/src/assets/dp.webp" fetchpriority="high">
+
+    <!-- ✅ Preload Local Fonts (No build warnings now) -->
+    <link rel="preload" href="/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- ✅ Font-face Declarations -->
+    <style>
+      @font-face {
+        font-family: 'Inter';
+        src: url('/fonts/Inter-Regular.woff2') format('woff2');
+        font-weight: 400;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Inter';
+        src: url('/fonts/Inter-Bold.woff2') format('woff2');
+        font-weight: 700;
+        font-display: swap;
+      }
+
+      body {
+        font-family: 'Inter', system-ui, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #0f172a;
+        color: #f8fafc;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
