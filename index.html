@@ -6,12 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Jayanth Utukuri - Full Stack Software Developer Portfolio. Showcasing modern web applications built with React, Node.js, and cutting-edge technologies." />
     <meta name="keywords" content="software developer, full stack developer, react developer, portfolio, web development" />
-    <meta name="author" content="John Doe" />
+    <meta name="author" content="Jayanth Utukuri" />
     <title>Jayanth Utukuri - Software Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script type="module" crossorigin src="/Portfolio/assets/index-CCmfZ6ZH.js"></script>
-    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-srVcI1Tb.css">
+
+    <!-- ✅ Preload Hero Image for Faster LCP -->
+    <link rel="preload" as="image" href="/Portfolio/assets/dp-qMtpMebi.webp" fetchpriority="high">
+
+    <!-- ✅ Preload Local Fonts (No build warnings now) -->
+    <link rel="preload" href="/Portfolio/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/Portfolio/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- ✅ Font-face Declarations -->
+    <style>
+      @font-face {
+        font-family: 'Inter';
+        src: url('/Portfolio/fonts/Inter-Regular.woff2') format('woff2');
+        font-weight: 400;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Inter';
+        src: url('/Portfolio/fonts/Inter-Bold.woff2') format('woff2');
+        font-weight: 700;
+        font-display: swap;
+      }
+
+      body {
+        font-family: 'Inter', system-ui, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #0f172a;
+        color: #f8fafc;
+      }
+    </style>
+    <script type="module" crossorigin src="/Portfolio/assets/index-BRPYy2EJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-C7Ptm8dH.css">
   </head>
   <body>
     <div id="root"></div>
