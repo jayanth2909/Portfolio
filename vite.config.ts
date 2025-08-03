@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import compression from 'vite-plugin-compression';
 
 export default defineConfig({
-  base: '/Portfolio/', // GitHub Pages repo name
+  base: '/Portfolio/', // ✅ GitHub repo name
   plugins: [
     react(),
     compression({
@@ -13,7 +13,12 @@ export default defineConfig({
       deleteOriginFile: false
     })
   ],
-  optimizeDeps: {
-    exclude: ['lucide-react'],
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true,
+  },
+  server: {
+    open: true,
   },
 });
