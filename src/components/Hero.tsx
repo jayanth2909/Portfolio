@@ -164,14 +164,11 @@ const Hero: React.FC = () => {
             >
               Let's Work Together
             </Button>
-            <Button
-              variant="outlined"
-              size="large"
-              startIcon={<Download />}
-              className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-slate-900 px-8 py-3 rounded-full backdrop-blur-sm bg-slate-800/50 transition-all duration-300"
-            >
-              Download Resume
-            </Button>
+            <a href="Portfolio/Jayanth_Resume.pdf" download="Jayanth_Utukuri_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <Button variant="outlined" size="large" startIcon={<Download />} className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-slate-900 px-8 py-3 rounded-full backdrop-blur-sm bg-slate-800/50 transition-all duration-300">
+                Download Resume
+              </Button>
+            </a>
           </div>
 
           {/* Social Links */}

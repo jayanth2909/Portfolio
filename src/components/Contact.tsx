@@ -31,8 +31,8 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       title: "Email",
-      details: "jayanthutukurius@gmail.com",
-      href: "mailto:jayanthutukurius@gmail.com"
+      details: "jayanthutukuri2810@gmail.com",
+      href: "mailto:jayanthutukuri2810@gmail.com"
     },
     {
       icon: Phone,

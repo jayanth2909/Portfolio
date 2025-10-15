@@ -95,16 +95,7 @@ const Footer: React.FC = () => {
             <Typography variant="body2">
               © {currentYear} Jayanth Utukuri. All rights reserved.
             </Typography>
-            <div className="flex items-center space-x-1">
-              <Typography variant="body2">Made with</Typography>
-              <motion.div
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ repeat: Infinity, duration: 1.5 }}
-              >
-                <Heart size={16} className="text-red-500 fill-current" />
-              </motion.div>
-              <Typography variant="body2">and lots of coffee</Typography>
-            </div>
+          
           </motion.div>
         </div>
       </div>

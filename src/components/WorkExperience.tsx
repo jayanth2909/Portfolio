@@ -13,31 +13,61 @@ const WorkExperience: React.FC = () => {
       location: "Remote – New York, USA",
       duration: "June 2025 – Present",
       description:
-        "Contributing to the 'Balanced Ternary Machine Code (BTMC) 2024 Version' emulator project. Developing reusable backend components and pixel-perfect UI panels using C# and WPF, improving CPU simulation speed and test efficiency. Automating build pipelines and mentoring interns on best practices.",
+        "Contributing to the 'Balanced Ternary Machine Code (BTMC) 2024 Version' emulator project. Developing modular CPU simulation components, reusable custom controls, and optimizing real-time UI rendering in C# WPF using MVVM. Automating build pipelines and documenting internal technical processes.",
       achievements: [
         "Improved CPU simulation performance by 25% (4s → 3s cycle time)",
-        "Reduced debugging and test cycles by 30% via optimized UI components",
-        "Automated build & deployment pipelines with GitHub Actions and Docker (80% fewer manual errors)",
-        "Mentored 2 interns on C# coding standards and sprint planning",
-        "Created onboarding and technical documentation improving knowledge transfer by 25%"
+        "Reduced debugging and test cycles by 30% through optimized control templates",
+        "Automated build & deployment pipelines using GitHub Actions and Docker (80% fewer manual errors)",
+        "Enhanced UI responsiveness with async data binding and virtualization (35% faster rendering)",
+        "Mentored 2 interns on C# coding standards and MVVM architecture"
       ],
-      technologies: ["C#", "WPF", ".NET", "Docker", "GitHub Actions", "Agile", "Technical Documentation"]
+      technologies: ["C#", "WPF", ".NET", "MVVM", "GitHub Actions", "Docker", "Agile", "UI Virtualization"]
+    },
+    {
+      title: "Graduate Research Assistant",
+      company: "Rivier University",
+      location: "Nashua, NH, USA",
+      duration: "May 2025 – Jun 2025",
+      description:
+        "Assisted in research on computer vision and AI-driven pattern recognition using Python and OpenCV. Focused on improving dataset quality, preprocessing, and model accuracy for real-time image analysis.",
+      achievements: [
+        "Improved model accuracy by 10% via optimized preprocessing and normalization",
+        "Automated image augmentation pipeline reducing manual prep time by 50%",
+        "Conducted literature reviews and contributed to research documentation",
+        "Collaborated with faculty for result validation and publication support"
+      ],
+      technologies: ["Python", "OpenCV", "NumPy", "scikit-learn", "Pandas", "TensorFlow", "Research Documentation"]
+    },
+    {
+      title: "Graduate Teaching Assistant",
+      company: "Rivier University",
+      location: "Nashua, NH, USA",
+      duration: "January 2025 – April 2025",
+      description:
+        "Supported Computer Science faculty in teaching Java and Object-Oriented Programming courses. Mentored students in programming best practices, debugging, and algorithm design.",
+      achievements: [
+        "Guided 30+ students in Java OOP, improving assignment success rate by 40%",
+        "Developed an automated grading script reducing evaluation time by 35%",
+        "Provided 1-on-1 mentoring for debugging and project-based assessments",
+        "Coordinated lab sessions and maintained course documentation"
+      ],
+      technologies: ["Java", "OOP", "Debugging", "Automation Scripts", "Teaching Assistance"]
     },
     {
       title: "Software Developer",
       company: "Sterlite Digital Pvt Ltd",
-      location: "Hyderabad, India",
+      location: "Bengaluru, India",
       duration: "July 2022 – August 2023",
       description:
-        "Developed scalable healthcare platform microservices processing 50K+ patient records/month using Java 17, Spring Boot, and Hibernate. Improved backend response times and database performance. Collaborated closely with cross-functional teams to deliver secure, reliable, and client-focused solutions.",
+        "Developed and maintained healthcare domain microservices using Java 17, Spring Boot 3, and Hibernate. Focused on backend scalability, database optimization, and real-time analytics dashboards built in ReactJS.",
       achievements: [
-        "Improved API response time by 35% (2.0s → 1.3s) exceeding SLA targets",
-        "Implemented Redis caching reducing query latency by 40% across 3 regional deployments",
-        "Reduced production defects by 45% via JUnit & Mockito automated test suites",
-        "Prepared deployment runbooks, API references, and shared best practices with teams",
-        "Boosted end-user satisfaction by 18% through client-focused solution delivery"
+        "Improved API response time by 35% (2.0s → 1.3s)",
+        "Implemented Redis caching reducing query latency by 40% across multiple regions",
+        "Integrated PostgreSQL and optimized indexes for large-scale data queries",
+        "Reduced production defects by 45% via automated test coverage (JUnit, Mockito)",
+        "Deployed services on AWS using Docker, Jenkins, and Terraform achieving 99.9% uptime"
       ],
-      technologies: ["Java 17", "Spring Boot 3.1", "Hibernate/JPA", "REST APIs", "MySQL", "Redis", "JUnit", "Mockito", "Agile"]
+      technologies: ["Java 17", "Spring Boot 3", "ReactJS", "Hibernate", "PostgreSQL", "Redis", "Docker", "AWS", "JUnit", "Mockito"]
     },
     {
       title: "Software Engineer Intern",
@@ -45,15 +75,45 @@ const WorkExperience: React.FC = () => {
       location: "Hyderabad, India",
       duration: "February 2022 – June 2022",
       description:
-        "Worked on a sports management platform delivering REST APIs and frontend features using Java Spring MVC and ReactJS. Enhanced database performance, supported QA phases, and prepared technical documentation for smooth knowledge transfer.",
+        "Worked on a sports management and analytics platform using Java Spring Boot and ReactJS. Developed scalable REST APIs and React-based dashboards for live score updates, ensuring smooth real-time user experience.",
       achievements: [
-        "Designed scalable REST APIs improving data retrieval speed by 28%",
-        "Enhanced PostgreSQL queries for analytics module, improving performance by 22%",
-        "Collaborated with coaches, analysts, and non-technical staff to translate business needs into technical solutions",
-        "Created API reference guides and module-level documentation for team onboarding",
-        "Identified and fixed critical defects during UAT improving release quality"
+        "Designed REST APIs improving data fetch latency by 28%",
+        "Integrated Kafka event streaming for asynchronous score updates",
+        "Enhanced PostgreSQL queries improving analytics module speed by 22%",
+        "Implemented JWT-based authentication improving data security by 15%",
+        "Deployed on AWS EC2 with Jenkins CI/CD achieving 99.9% uptime"
       ],
-      technologies: ["Java 11", "Spring MVC", "Hibernate", "PostgreSQL", "ReactJS", "Redux", "QA Testing", "Technical Documentation"]
+      technologies: ["Java 11", "Spring Boot", "ReactJS", "Kafka", "PostgreSQL", "JWT", "Jenkins", "AWS"]
+    },
+    {
+      title: "UI/UX Designer Intern",
+      company: "Confegure",
+      location: "Hyderabad, India",
+      duration: "June 2021 – August 2021",
+      description:
+        "Collaborated with the frontend team to design interactive wireframes and prototypes focused on usability and accessibility.",
+      achievements: [
+        "Designed UI mockups improving navigation flow by 30%",
+        "Maintained brand consistency across all web interfaces",
+        "Created reusable design components for frontend integration",
+        "Worked closely with developers for smooth handoffs from Figma to production"
+      ],
+      technologies: ["Figma", "Wireframing", "Prototyping", "UI Design", "UX Research"]
+    },
+    {
+      title: "Mobile Application Intern",
+      company: "The Sparks Foundation",
+      location: "Hyderabad, India",
+      duration: "May 2021 – June 2021",
+      description:
+        "Built cross-platform mobile applications using React Native and Firebase for social and educational use cases.",
+      achievements: [
+        "Developed mobile apps achieving 98% crash-free rate on deployment",
+        "Implemented Firebase Authentication and Realtime Database",
+        "Integrated user feedback with continuous improvement cycles",
+        "Enhanced app UI with reusable React Native components"
+      ],
+      technologies: ["React Native", "Firebase", "JavaScript", "Expo", "Mobile App Development"]
     }
   ];
 
@@ -63,7 +123,7 @@ const WorkExperience: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-transparent to-purple-900/20"></div>
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
-      
+
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -75,14 +135,14 @@ const WorkExperience: React.FC = () => {
           <Typography variant="h3" className="font-bold mb-4 text-4xl">
             Work <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Experience</span>
           </Typography>
-          <Typography 
+          <Typography
             variant="body1"
             sx={{
-              color: '#94a3b8', 
-              maxWidth: '70rem', 
+              color: '#94a3b8',
+              maxWidth: '70rem',
               marginX: 'auto',
-              fontSize: '1.2rem', 
-              lineHeight: 1.9,     
+              fontSize: '1.2rem',
+              lineHeight: 1.9,
               textAlign: 'center',
               mb: 4,
             }}
