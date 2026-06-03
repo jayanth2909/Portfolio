@@ -1,95 +1,161 @@
+
 import React from 'react';
 import { Typography, Card, CardContent, Box } from '@mui/material';
 import { motion } from 'framer-motion';
 import {
-  SiReact, SiTypescript, SiJavascript, SiHtml5, SiCss3,
-  SiPython, SiFlask, SiSpringboot, SiHibernate, SiPhp,
-  SiMysql, SiPostgresql, SiFirebase,
-  SiDocker, SiKubernetes, SiAmazonaws,
-  SiGit, SiJenkins, SiJunit5, SiAngular, SiSocketdotio
+  SiReact,
+  SiRedux,
+  SiTypescript,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiSpringboot,
+  SiHibernate,
+  SiMysql,
+  SiPostgresql,
+  SiMongodb,
+  SiRedis,
+  SiDocker,
+  SiKubernetes,
+  SiAmazonaws,
+  SiGit,
+  SiJenkins,
+  SiAngular,
+  SiReactivex,
+  SiApachekafka,
+  SiGradle,
+  SiGithubactions,
+  SiJira,
+  SiPostman,
+  SiElasticsearch,
+  SiJest,
+  SiCypress,
+  SiGraphql,
+  SiSwagger,
+  SiSplunk,
+  SiDatadog
 } from 'react-icons/si';
 
-import { FaJava, FaReact } from 'react-icons/fa'; // for JSP, J2EE, Mockito placeholder
-import { MdApi } from 'react-icons/md';  // for REST APIs
-
+import { FaJava, FaDatabase } from 'react-icons/fa';
+import {
+  MdApi,
+  MdSecurity,
+  MdAccessibility,
+  MdBugReport,
+  MdSpeed,
+  MdBuild,
+  MdCode
+} from 'react-icons/md';
+import { TbCloudComputing } from 'react-icons/tb';
 
 const Skills: React.FC = () => {
   const skillCategories = [
     {
-      title: "Frontend Technologies",
-      gradient: "from-blue-500 to-cyan-500",
+      title: 'Programming Languages',
+      gradient: 'from-sky-500 to-blue-500',
       skills: [
-        { name: "React", icon: SiReact, color: "#61DAFB" },
-        { name: "React Native", icon: FaReact, color: "#61DAFB" },
-        { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-        { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
-        { name: "Angular", icon: SiAngular, color: "#DD0031" },
-        { name: "HTML5", icon: SiHtml5, color: "#e34f26" },
-        { name: "CSS3", icon: SiCss3, color: "#264de4" }
+        { name: 'Java', icon: FaJava, color: '#F89820' },
+        { name: 'JavaScript ES6+', icon: SiJavascript, color: '#F7DF1E' },
+        { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
+        { name: 'SQL', icon: FaDatabase, color: '#F59E0B' }
       ]
     },
     {
-      title: "Backend & APIs",
-      gradient: "from-green-500 to-emerald-500",
+      title: 'Frontend Technologies',
+      gradient: 'from-blue-500 to-cyan-500',
       skills: [
-        { name: "Java", icon: FaJava, color: "#f89820" },
-        { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" },
-        { name: "Hibernate", icon: SiHibernate, color: "#59666C" },
-        { name: "J2EE", icon: FaJava, color: "#f89820" }, // No J2EE icon; using Java
-        { name: "JSP", icon: FaJava, color: "#f89820" },  // Same
-        { name: "Python", icon: SiPython, color: "#3776AB" },
-        { name: "Flask", icon: SiFlask, color: "#000000" },
-        { name: "PHP", icon: SiPhp, color: "#777BB4" },
-        { name: "REST APIs", icon: SiSpringboot, color: "#6DB33F" }, // Placeholder
-        { name: "Socket.io", icon: SiSocketdotio, color: "#010101" }
+        { name: 'Angular / AngularJS', icon: SiAngular, color: '#DD0031' },
+        { name: 'RxJS / NgRx', icon: SiReactivex, color: '#B7178C' },
+        { name: 'React', icon: SiReact, color: '#61DAFB' },
+        { name: 'Redux Toolkit', icon: SiRedux, color: '#764ABC' },
+        { name: 'HTML5', icon: SiHtml5, color: '#E34F26' },
+        { name: 'CSS3 / SASS', icon: SiCss3, color: '#264DE4' },
+        { name: 'Responsive UI', icon: MdAccessibility, color: '#22C55E' },
+        { name: 'Accessibility / WCAG', icon: MdAccessibility, color: '#22C55E' }
       ]
     },
     {
-      title: "Databases & Storage",
-      gradient: "from-purple-500 to-pink-500",
+      title: 'Backend & Engineering',
+      gradient: 'from-green-500 to-emerald-500',
       skills: [
-        { name: "MySQL", icon: SiMysql, color: "#4479A1" },
-        { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
-        { name: "Firebase", icon: SiFirebase, color: "#FFCA28" }
+        { name: 'Java / J2EE', icon: FaJava, color: '#F89820' },
+        { name: 'Spring Boot', icon: SiSpringboot, color: '#6DB33F' },
+        { name: 'Spring MVC', icon: SiSpringboot, color: '#6DB33F' },
+        { name: 'Spring Security', icon: MdSecurity, color: '#6DB33F' },
+        { name: 'Spring Data JPA', icon: SiSpringboot, color: '#6DB33F' },
+        { name: 'Hibernate / JPA', icon: SiHibernate, color: '#59666C' },
+        { name: 'Microservices', icon: TbCloudComputing, color: '#10B981' },
+        { name: 'Servlets / JSP', icon: FaJava, color: '#F89820' },
+        { name: 'OOP / SOLID', icon: MdCode, color: '#38BDF8' },
+        { name: 'Design Patterns', icon: MdBuild, color: '#38BDF8' },
+        { name: 'Clean Code', icon: MdBuild, color: '#A78BFA' }
       ]
     },
     {
-      title: "DevOps & Cloud",
-      gradient: "from-orange-500 to-red-500",
+      title: 'Databases & Caching',
+      gradient: 'from-purple-500 to-pink-500',
       skills: [
-        { name: "Docker", icon: SiDocker, color: "#2496ED" },
-        { name: "Kubernetes", icon: SiKubernetes, color: "#326CE5" },
-        { name: "AWS", icon: SiAmazonaws, color: "#FF9900" },
-        { name: "Git", icon: SiGit, color: "#F05032" },
-        { name: "Jenkins", icon: SiJenkins, color: "#D24939" }
+        { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
+        { name: 'Oracle', icon: FaDatabase, color: '#F80000' },
+        { name: 'MySQL', icon: SiMysql, color: '#4479A1' },
+        { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
+        { name: 'Redis', icon: SiRedis, color: '#DC382D' },
+        { name: 'SQL Optimization', icon: FaDatabase, color: '#F59E0B' }
       ]
     },
     {
-      title: "Testing & Tools",
-      gradient: "from-indigo-500 to-purple-500",
+      title: 'APIs & Integration',
+      gradient: 'from-yellow-500 to-orange-500',
       skills: [
-        { name: "JUnit", icon: FaJava, color: "#C21325" },
-        { name: "Mockito", icon: FaJava, color: "#C21325" }
+        { name: 'REST APIs', icon: MdApi, color: '#38BDF8' },
+        { name: 'SOAP Web Services', icon: MdApi, color: '#38BDF8' },
+        { name: 'GraphQL', icon: SiGraphql, color: '#E10098' },
+        { name: 'Swagger / OpenAPI', icon: SiSwagger, color: '#85EA2D' },
+        { name: 'OpenFeign', icon: MdApi, color: '#38BDF8' },
+        { name: 'Axios / HTTP Client', icon: MdApi, color: '#5A29E4' },
+        { name: 'JSON / XML', icon: MdApi, color: '#CBD5E1' }
+      ]
+    },
+    {
+      title: 'Messaging & Event Streaming',
+      gradient: 'from-amber-500 to-red-500',
+      skills: [
+        { name: 'Apache Kafka', icon: SiApachekafka, color: '#FFFFFF' },
+        { name: 'JMS / MQ Messaging', icon: MdApi, color: '#38BDF8' },
+        { name: 'Event-Driven Architecture', icon: TbCloudComputing, color: '#F97316' },
+        { name: 'Asynchronous Processing', icon: MdSpeed, color: '#F59E0B' }
+      ]
+    },
+    {
+      title: 'Cloud & DevOps',
+      gradient: 'from-orange-500 to-red-500',
+      skills: [
+        { name: 'AWS Cloud', icon: SiAmazonaws, color: '#FF9900' },
+        { name: 'Docker', icon: SiDocker, color: '#2496ED' },
+        { name: 'Kubernetes / OpenShift', icon: SiKubernetes, color: '#326CE5' },
+        { name: 'Jenkins', icon: SiJenkins, color: '#D24939' },
+        { name: 'GitHub Actions', icon: SiGithubactions, color: '#2088FF' },
+        { name: 'Maven / Gradle', icon: SiGradle, color: '#02303A' },
+        { name: 'Git', icon: SiGit, color: '#F05032' }
+      ]
+    },
+    {
+      title: 'Testing, Monitoring & Tools',
+      gradient: 'from-indigo-500 to-purple-500',
+      skills: [
+        { name: 'JUnit / Mockito', icon: FaJava, color: '#25A162' },
+        { name: 'JMeter', icon: MdSpeed, color: '#D22128' },
+        { name: 'Jest', icon: SiJest, color: '#C21325' },
+        { name: 'Cypress / Playwright', icon: SiCypress, color: '#69D3A7' },
+        { name: 'Cucumber', icon: MdBugReport, color: '#23D96C' },
+        { name: 'Splunk', icon: SiSplunk, color: '#F97316' },
+        { name: 'Datadog', icon: SiDatadog, color: '#632CA6' },
+        { name: 'ELK Stack', icon: SiElasticsearch, color: '#005571' },
+        { name: 'Postman', icon: SiPostman, color: '#FF6C37' },
+        { name: 'Jira', icon: SiJira, color: '#0052CC' }
       ]
     }
   ];
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.1 }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: { type: "spring", stiffness: 100 }
-    }
-  };
 
   return (
     <section id="skills" className="py-20 bg-slate-900 relative overflow-hidden">
@@ -106,78 +172,80 @@ const Skills: React.FC = () => {
           className="text-center mb-16"
         >
           <Typography variant="h3" className="font-bold mb-4">
-            Skills & <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Technologies</span>
+            Skills &{' '}
+            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              Technologies
+            </span>
           </Typography>
-          <Typography variant="body1"
+
+          <Typography
+            variant="body1"
             sx={{
               color: '#94a3b8',
               maxWidth: '50rem',
               mx: 'auto',
               fontSize: '1.125rem',
-              textAlign: 'center',
-            }}>
-            A comprehensive toolkit of modern technologies I use to build exceptional digital experiences
+              textAlign: 'center'
+            }}
+          >
+            A focused technology stack I use to build scalable Java full stack applications,
+            REST APIs, cloud-ready microservices, and modern frontend workflows.
           </Typography>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.title}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
+              transition={{ duration: 0.6, delay: categoryIndex * 0.08 }}
               viewport={{ once: true }}
-              className="group"
+              className="group h-full"
             >
               <Card className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 hover:border-slate-600 transition-all duration-500 h-full group-hover:shadow-2xl group-hover:shadow-blue-500/10">
-                <CardContent className="p-6">
-                  <div className={`bg-gradient-to-r ${category.gradient} p-4 rounded-xl mb-6 group-hover:scale-105 transition-transform duration-300`}>
+                <CardContent className="p-6 h-full flex flex-col">
+                  <div
+                    className={`bg-gradient-to-r ${category.gradient} p-4 rounded-xl mb-6 group-hover:scale-105 transition-transform duration-300`}
+                  >
                     <Typography variant="h6" className="font-bold text-white text-center">
                       {category.title}
                     </Typography>
                   </div>
 
-                  <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    className="grid grid-cols-2 gap-4"
-                  >
+                  <div className="grid grid-cols-2 gap-4 auto-rows-fr flex-1 content-start">
                     {category.skills.map((skill) => (
                       <motion.div
                         key={skill.name}
-                        variants={itemVariants}
                         whileHover={{
-                          scale: 1.05,
-                          rotate: [0, -1, 1, 0],
-                          transition: { duration: 0.3 }
+                          scale: 1.04,
+                          transition: { duration: 0.2 }
                         }}
-                        className="group/skill"
+                        className="h-full"
                       >
-                        <Box className="bg-slate-700/50 rounded-xl p-4 text-center hover:bg-slate-700 transition-all duration-300 border border-slate-600/30 hover:border-slate-500">
+                        <Box className="h-full min-h-[92px] bg-slate-700/50 rounded-xl p-4 text-center hover:bg-slate-700 transition-all duration-300 border border-slate-600/30 hover:border-slate-500 flex flex-col items-center justify-center">
                           <motion.div
-                            whileHover={{ scale: 1.2 }}
-                            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                            whileHover={{ scale: 1.15 }}
+                            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
                             className="mb-3 flex justify-center"
                           >
                             <skill.icon
-                              size={32}
+                              size={30}
                               style={{ color: skill.color }}
                               className="drop-shadow-lg group-hover/skill:drop-shadow-xl transition-all duration-300"
                             />
                           </motion.div>
+
                           <Typography
                             variant="body2"
-                            className="font-medium text-slate-300 group-hover/skill:text-white transition-colors duration-300 text-xs"
+                            className="font-medium text-slate-300 transition-colors duration-300 text-xs leading-snug"
                           >
                             {skill.name}
                           </Typography>
                         </Box>
                       </motion.div>
                     ))}
-                  </motion.div>
+                  </div>
                 </CardContent>
               </Card>
             </motion.div>
@@ -192,19 +260,21 @@ const Skills: React.FC = () => {
           className="mt-16 text-center"
         >
           <div className="bg-gradient-to-r from-slate-800 to-slate-700 rounded-2xl p-8 border border-slate-600/50">
-            <Typography variant="h5"
-              sx={{ fontWeight: 'bold', color: 'white', mb: 2 }}>Always Learning & Growing</Typography>
+            <Typography variant="h5" sx={{ fontWeight: 'bold', color: 'white', mb: 2 }}>
+              Always Learning & Growing
+            </Typography>
 
-            <Typography variant="body1"
+            <Typography
+              variant="body1"
               sx={{
                 color: '#94a3b8',
-                whiteSpace: 'nowrap',
-                overflow: 'hidden',
                 fontSize: 'clamp(0.8rem, 2vw, 1rem)',
                 maxWidth: '100%',
-                textAlign: 'center',
-              }}>
-              Technology evolves rapidly, and so do I. I'm constantly exploring new frameworks, tools, and methodologies to stay at the cutting edge of software development.
+                textAlign: 'center'
+              }}
+            >
+              I continuously improve my skills across Java, Spring Boot, cloud-native
+              development, frontend frameworks, testing, and production-ready engineering practices.
             </Typography>
           </div>
         </motion.div>
@@ -214,3 +284,4 @@ const Skills: React.FC = () => {
 };
 
 export default Skills;
+

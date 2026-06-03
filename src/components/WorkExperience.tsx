@@ -7,115 +7,163 @@ import { motion } from 'framer-motion';
 
 const WorkExperience: React.FC = () => {
   const experiences = [
-    {
-      title: "Software Engineer Intern",
-      company: "Tern Computer Inc.",
-      location: "Remote – New York, USA",
-      duration: "June 2025 – Present",
-      description:
-        "Contributing to the 'Balanced Ternary Machine Code (BTMC) 2024 Version' emulator project. Developing modular CPU simulation components, reusable custom controls, and optimizing real-time UI rendering in C# WPF using MVVM. Automating build pipelines and documenting internal technical processes.",
-      achievements: [
-        "Improved CPU simulation performance by 25% (4s → 3s cycle time)",
-        "Reduced debugging and test cycles by 30% through optimized control templates",
-        "Automated build & deployment pipelines using GitHub Actions and Docker (80% fewer manual errors)",
-        "Enhanced UI responsiveness with async data binding and virtualization (35% faster rendering)",
-        "Mentored 2 interns on C# coding standards and MVVM architecture"
-      ],
-      technologies: ["C#", "WPF", ".NET", "MVVM", "GitHub Actions", "Docker", "Agile", "UI Virtualization"]
-    },
-    {
-      title: "Graduate Research Assistant",
-      company: "Rivier University",
-      location: "Nashua, NH, USA",
-      duration: "May 2025 – Jun 2025",
-      description:
-        "Assisted in research on computer vision and AI-driven pattern recognition using Python and OpenCV. Focused on improving dataset quality, preprocessing, and model accuracy for real-time image analysis.",
-      achievements: [
-        "Improved model accuracy by 10% via optimized preprocessing and normalization",
-        "Automated image augmentation pipeline reducing manual prep time by 50%",
-        "Conducted literature reviews and contributed to research documentation",
-        "Collaborated with faculty for result validation and publication support"
-      ],
-      technologies: ["Python", "OpenCV", "NumPy", "scikit-learn", "Pandas", "TensorFlow", "Research Documentation"]
-    },
-    {
-      title: "Graduate Teaching Assistant",
-      company: "Rivier University",
-      location: "Nashua, NH, USA",
-      duration: "January 2025 – April 2025",
-      description:
-        "Supported Computer Science faculty in teaching Java and Object-Oriented Programming courses. Mentored students in programming best practices, debugging, and algorithm design.",
-      achievements: [
-        "Guided 30+ students in Java OOP, improving assignment success rate by 40%",
-        "Developed an automated grading script reducing evaluation time by 35%",
-        "Provided 1-on-1 mentoring for debugging and project-based assessments",
-        "Coordinated lab sessions and maintained course documentation"
-      ],
-      technologies: ["Java", "OOP", "Debugging", "Automation Scripts", "Teaching Assistance"]
-    },
-    {
-      title: "Software Developer",
-      company: "Sterlite Digital Pvt Ltd",
-      location: "Bengaluru, India",
-      duration: "July 2022 – August 2023",
-      description:
-        "Developed and maintained healthcare domain microservices using Java 17, Spring Boot 3, and Hibernate. Focused on backend scalability, database optimization, and real-time analytics dashboards built in ReactJS.",
-      achievements: [
-        "Improved API response time by 35% (2.0s → 1.3s)",
-        "Implemented Redis caching reducing query latency by 40% across multiple regions",
-        "Integrated PostgreSQL and optimized indexes for large-scale data queries",
-        "Reduced production defects by 45% via automated test coverage (JUnit, Mockito)",
-        "Deployed services on AWS using Docker, Jenkins, and Terraform achieving 99.9% uptime"
-      ],
-      technologies: ["Java 17", "Spring Boot 3", "ReactJS", "Hibernate", "PostgreSQL", "Redis", "Docker", "AWS", "JUnit", "Mockito"]
-    },
-    {
-      title: "Software Engineer Intern",
-      company: "Cognizant",
-      location: "Hyderabad, India",
-      duration: "February 2022 – June 2022",
-      description:
-        "Worked on a sports management and analytics platform using Java Spring Boot and ReactJS. Developed scalable REST APIs and React-based dashboards for live score updates, ensuring smooth real-time user experience.",
-      achievements: [
-        "Designed REST APIs improving data fetch latency by 28%",
-        "Integrated Kafka event streaming for asynchronous score updates",
-        "Enhanced PostgreSQL queries improving analytics module speed by 22%",
-        "Implemented JWT-based authentication improving data security by 15%",
-        "Deployed on AWS EC2 with Jenkins CI/CD achieving 99.9% uptime"
-      ],
-      technologies: ["Java 11", "Spring Boot", "ReactJS", "Kafka", "PostgreSQL", "JWT", "Jenkins", "AWS"]
-    },
-    {
-      title: "UI/UX Designer Intern",
-      company: "Confegure",
-      location: "Hyderabad, India",
-      duration: "June 2021 – August 2021",
-      description:
-        "Collaborated with the frontend team to design interactive wireframes and prototypes focused on usability and accessibility.",
-      achievements: [
-        "Designed UI mockups improving navigation flow by 30%",
-        "Maintained brand consistency across all web interfaces",
-        "Created reusable design components for frontend integration",
-        "Worked closely with developers for smooth handoffs from Figma to production"
-      ],
-      technologies: ["Figma", "Wireframing", "Prototyping", "UI Design", "UX Research"]
-    },
-    {
-      title: "Mobile Application Intern",
-      company: "The Sparks Foundation",
-      location: "Hyderabad, India",
-      duration: "May 2021 – June 2021",
-      description:
-        "Built cross-platform mobile applications using React Native and Firebase for social and educational use cases.",
-      achievements: [
-        "Developed mobile apps achieving 98% crash-free rate on deployment",
-        "Implemented Firebase Authentication and Realtime Database",
-        "Integrated user feedback with continuous improvement cycles",
-        "Enhanced app UI with reusable React Native components"
-      ],
-      technologies: ["React Native", "Firebase", "JavaScript", "Expo", "Mobile App Development"]
-    }
-  ];
+  {
+    title: "Java Full Stack Developer",
+    company: "Blue Cross Blue Shield Association",
+    location: "Boston, MA, USA",
+    duration: "Jan 2024 – Present",
+    description:
+      "Designed, developed, tested, and supported enterprise healthcare applications using Java, Spring Boot, REST APIs, Microservices, Angular, React, SQL databases, Kafka/JMS, AWS, Docker, Kubernetes, and CI/CD pipelines.",
+    achievements: [
+      "Designed and developed scalable Java/Spring Boot Microservices using Java 17/21, Spring Boot 3, Spring MVC, and REST APIs for member enrollment, provider eligibility, claims processing, and healthcare workflows.",
+      "Built backend modules involving REST API integrations, Spring Boot services, PostgreSQL/Oracle persistence, caching workflows, and downstream enterprise system communication.",
+      "Developed responsive frontend modules using Angular 17, RxJS, TypeScript, HTML5, CSS3, SASS/SCSS, and reusable components for internal healthcare applications.",
+      "Built and enhanced React 18 modules using React Hooks, Redux Toolkit, JavaScript, TypeScript, and reusable UI components for provider-facing application features.",
+      "Implemented secure backend workflows using Spring Security, OAuth2, JWT, RBAC, and service-to-service authentication.",
+      "Built event-driven backend workflows using Apache Kafka, JMS messaging, and asynchronous processing patterns.",
+      "Optimized application performance by tuning SQL queries, improving backend service calls, implementing Redis caching, and troubleshooting service-level bottlenecks.",
+      "Supported API performance validation using JMeter by simulating concurrent requests, reviewing response times, and helping identify bottlenecks in Java/Spring Boot REST APIs.",
+      "Supported cloud-ready deployments using AWS, Docker, Kubernetes, OpenShift, Jenkins, GitHub Actions, Maven, and CI/CD pipelines.",
+      "Developed and maintained automated tests using JUnit, Mockito, Jest, Cypress, and Playwright.",
+      "Improved frontend quality by building accessible UI workflows with Angular, reusable components, WCAG/screen-reader-conscious design practices, and API-driven form validations.",
+      "Collaborated with architects, product owners, QA, DevOps, and distributed Agile teams during sprint planning, code reviews, defect triage, release support, and production troubleshooting."
+    ],
+    technologies: [
+      "Java 17/21",
+      "Spring Boot 3",
+      "Spring MVC",
+      "REST APIs",
+      "Microservices",
+      "Angular 17",
+      "RxJS",
+      "React 18",
+      "Redux Toolkit",
+      "TypeScript",
+      "JavaScript",
+      "PostgreSQL",
+      "Oracle",
+      "Redis",
+      "Kafka",
+      "JMS",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "GitHub Actions",
+      "JUnit",
+      "Mockito",
+      "JMeter",
+      "Splunk",
+      "Datadog",
+      "Agile/Scrum"
+    ]
+  },
+  {
+    title: "Java Full Stack Developer",
+    company: "State Farm",
+    location: "Bloomington, IL, USA",
+    duration: "Mar 2022 – Aug 2023",
+    description:
+      "Developed and supported enterprise insurance applications using Java, Spring Boot, REST APIs, SOAP services, Angular, React, relational databases, Kafka/JMS, CI/CD pipelines, and cloud/containerized deployments.",
+    achievements: [
+      "Developed enterprise backend Java/Spring Boot Microservices using Java 11, Spring Boot 2.x, Spring MVC, Spring Data JPA, and Hibernate for claims, policy, payment, and customer account workflows.",
+      "Modernized legacy applications by migrating Servlets/JSP, jQuery, and Struts-based modules into Spring Boot Microservices, Angular 14, and React.js.",
+      "Designed and implemented REST APIs, SOAP services, and upstream/downstream integrations using Java, Spring MVC, OpenFeign, JSON, and XML.",
+      "Developed frontend modules using Angular 14, RxJS, TypeScript, HTML5, CSS3, React 17, React Hooks, and reusable UI components.",
+      "Implemented service-layer and persistence workflows using Hibernate, JPA, Oracle, PostgreSQL, MySQL, MongoDB, Redis, and SQL optimization techniques.",
+      "Applied OOP, SOLID principles, and design patterns while contributing to API contracts, reusable service components, and scalable backend workflows.",
+      "Built event-driven backend workflows using Apache Kafka, JMS messaging, and asynchronous processing to support distributed insurance systems.",
+      "Applied Core Java multithreading and Executor Framework concepts to support asynchronous workloads and backend batch processing.",
+      "Supported CI/CD pipelines and deployments using Jenkins, Maven, Git, Docker, Kubernetes, AWS, and OpenShift.",
+      "Created and maintained automated tests using JUnit, Mockito, Cucumber, Cypress, and Playwright.",
+      "Monitored and resolved application issues using Datadog, CloudWatch, ELK Stack, application logs, and local debugging.",
+      "Collaborated with QA, DevOps, product teams, and business stakeholders during Agile/SAFe, stand-ups, code reviews, defect discussions, and deployment support."
+    ],
+    technologies: [
+      "Java 11",
+      "Spring Boot 2.x",
+      "Spring MVC",
+      "Spring Data JPA",
+      "Hibernate",
+      "REST APIs",
+      "SOAP",
+      "OpenFeign",
+      "Angular 14",
+      "RxJS",
+      "React 17",
+      "TypeScript",
+      "Oracle",
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Redis",
+      "Kafka",
+      "JMS",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "OpenShift",
+      "Jenkins",
+      "Maven",
+      "JUnit",
+      "Mockito",
+      "Cucumber",
+      "Datadog",
+      "ELK Stack",
+      "Agile/SAFe"
+    ]
+  },
+  {
+    title: "Full Stack Developer",
+    company: "Savena Solutions",
+    location: "Hyderabad, India",
+    duration: "Dec 2020 – Feb 2022",
+    description:
+      "Developed full stack enterprise web applications using Java, Spring Boot, REST APIs, React, Angular, MySQL, Maven, Jenkins, and Agile/Scrum delivery practices.",
+    achievements: [
+      "Developed backend services using Java 8/11, Spring Boot, Spring MVC, and Spring Data JPA to support enterprise web applications and internal business workflows.",
+      "Designed and maintained REST APIs for frontend integration, backend business logic execution, and secure communication between application layers.",
+      "Implemented service-layer and persistence-layer logic using Hibernate, JPA, JDBC, and MySQL to support transactional data processing and CRUD operations.",
+      "Built frontend features using React.js, React Hooks, Angular 11, JavaScript, TypeScript, HTML5, CSS3, and Bootstrap.",
+      "Integrated frontend applications with backend APIs using Axios, React Router, reusable service methods, and JSON-based communication patterns.",
+      "Implemented authentication and access control using Spring Security and JWT to secure application endpoints and protected workflows.",
+      "Documented REST APIs using Swagger/OpenAPI to support frontend integration, API testing, and QA collaboration.",
+      "Supported builds, deployments, and release activities using Maven, Apache Tomcat, Git, and Jenkins.",
+      "Created frontend unit tests using Jest and supported debugging, defect fixes, regression testing, and application troubleshooting.",
+      "Collaborated with developers, QA teams, and business users in Agile/Scrum environments during sprint planning, testing, release coordination, and defect resolution."
+    ],
+    technologies: [
+      "Java 8/11",
+      "Spring Boot",
+      "Spring MVC",
+      "Spring Data JPA",
+      "Hibernate",
+      "JPA",
+      "JDBC",
+      "REST APIs",
+      "Swagger/OpenAPI",
+      "React.js",
+      "React Hooks",
+      "Angular 11",
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "Axios",
+      "React Router",
+      "MySQL",
+      "Spring Security",
+      "JWT",
+      "Maven",
+      "Apache Tomcat",
+      "Git",
+      "Jenkins",
+      "Jest",
+      "Agile/Scrum"
+    ]
+  }
+];
 
   return (
     <section id="experience" className="py-20 bg-slate-800 relative overflow-hidden">

@@ -20,7 +20,7 @@ const Education: React.FC = () => {
     {
       degree: "Bachelor of Technology in Computer Science and Data Science",
       school: "Koneru Lakshmaiah University",
-      duration: "Jun 2018 - Apr 2022",
+      duration: "Jun 2017 - Apr 2021",
       gpa: "3.7/4.0",
       location: "Hyderabad, Telangana, India",
       achievements: ["Academic Merit Scholarship", "Top 10% of Graduating Class", "AI Hackathon Finalist"],

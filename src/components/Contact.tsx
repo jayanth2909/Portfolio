@@ -31,14 +31,14 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       title: "Email",
-      details: "jayanthutukuri2810@gmail.com",
-      href: "mailto:jayanthutukuri2810@gmail.com"
+      details: "jayanthvarma0908@gmail.com",
+      href: "mailto:jayanthvarma0908@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      details: "+1 (603)-557-5250",
-      href: "tel:+16035575250"
+      details: "+1 (571)-249-4276",
+      href: "tel:+15712494276"
     },
     {
       icon: MapPin,
